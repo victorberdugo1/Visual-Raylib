@@ -4,7 +4,7 @@
 *
 ********************************************************************************************/
 
-#include "raylib/src/raylib.h"
+#include "raylib.h"
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
@@ -79,7 +79,7 @@ void NEWGAME(){
 
 void UpdateMenu()
 {
-  if (IsKeyPressed("DOWN"))
+  if (IsKeyPressed(KEY_DOWN))
   {
     if (choice_sel < nb_choice - 1)
     {
@@ -87,7 +87,7 @@ void UpdateMenu()
     }
     else{choice_sel=0;}
   }
-  if (IsKeyPressed("UP"))
+  if (IsKeyPressed(KEY_UP))
   {
     if (choice_sel > 0)
     {
@@ -377,7 +377,7 @@ void updt_dial()
   }
 
   //MENU MANAGER
-  if (IsKeyPressed("START"))
+  if (IsKeyPressed(KEY_ENTER))
   {
     // playSomeSound();
     choice_sel = 0;

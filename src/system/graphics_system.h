@@ -4,7 +4,7 @@
 //UI variable (should be int or define ?)
 #define screenWidth 800
 #define screenHeight 450
-#include "../raylib/src/raylib.h"
+#include "../raylib.h"
 
 
 ////// ------------ RAYLIB

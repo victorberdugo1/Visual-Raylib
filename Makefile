@@ -24,7 +24,7 @@
 .PHONY: all clean
 
 # Define required raylib variables
-PROJECT_NAME       ?= build/VNES_PC
+PROJECT_NAME       ?= VNES_PC
 RAYLIB_VERSION     ?= 3.0.0
 RAYLIB_API_VERSION ?= 300
 RAYLIB_PATH        ?= c:/raylib/raylib

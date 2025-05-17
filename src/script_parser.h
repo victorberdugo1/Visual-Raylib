@@ -402,23 +402,23 @@ void init_dial() //Handle parsing and logic
     }
     case MUSIC:
     {
-      if (SCRPT[menu_index].c=="stop")
+      if (strcmp(SCRPT[menu_index].c, "stop") == 0)
       {
         VN_StopMusicStream(MusicList.music_list[MusicList.music_playing]);
         MusicList.isplaying = false;
       }
-      else if (SCRPT[menu_index].c=="play")
+      else if (strcmp(SCRPT[menu_index].c, "play") == 0)
       {
         VN_PlayMusicStream(MusicList.music_list[MusicList.music_playing]);
         MusicList.isplaying = true;
       }
-      else if (SCRPT[menu_index].c=="pause")
+      else if (strcmp(SCRPT[menu_index].c, "pause") == 0)
       {
         VN_PauseMusicStream(MusicList.music_list[MusicList.music_playing]);
         MusicList.isplaying = false;
 
       }
-      else if (SCRPT[menu_index].c=="resume")
+      else if (strcmp(SCRPT[menu_index].c, "resume") == 0)
       {
         VN_ResumeMusicStream(MusicList.music_list[MusicList.music_playing]);
         MusicList.isplaying = true;
